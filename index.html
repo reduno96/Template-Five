@@ -124,14 +124,16 @@
         <!-- End Head -->
         <h1 class="p-relative">Dashboard</h1>
         <div class="wrapper | d-grid gap-20">
+          <!-- Start Welcome widget -->
           <div class="welcome | bg-white rad-10 txt-c-mobile block-mobile">
             <div class="intro | p-20 d-flex space-between bg-eee">
               <div>
                 <h2 class="m-0">Welcome</h2>
                 <p class="c-nt-200 mt-5">Redouane</p>
               </div>
-              <img src="images/welcome.png" alt="" />
+              <img class="hide-mobile" src="images/welcome.png" alt="" />
             </div>
+            <img src="images/avatar-anisha.png" alt="" class="avatar" />
             <div class="body | txt-c d-flex p-20 mt-20 mb-20 block-mobile">
               <div>
                 Redouane El Morabet<span class="d-block c-nt-200 fs-14 mt-10"
@@ -145,12 +147,155 @@
                 $100000<span class="d-block c-nt-200 fs-14 mt-10">Earned</span>
               </div>
             </div>
-            <a
-              href="profile.html"
-              class="visit d-block fs-14 rad-6 c-white bg-pr-600 w-fit"
-              >Profile</a
-            >
+            <a href="profile.html" class="visit bnt-shape">Profile</a>
           </div>
+          <!-- End Welcome widget -->
+          <!-- Start Quick Draft Widget -->
+          <div class="quick-draft | p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Quick Draft</h2>
+            <p class="mt-0 mb-20 fs-15 c-nt-200">
+              Write A Draft For Your Ideas
+            </p>
+            <form action="">
+              <input
+                class="input-full"
+                type="text"
+                name="title"
+                placeholder="Title"
+              />
+              <textarea
+                class="input-full"
+                placeholder="Your Thought"
+                name="thought"
+              ></textarea>
+              <input class="save | bnt-shape" type="submit" value="Save" />
+            </form>
+          </div>
+          <!-- End Quick Draft Widget -->
+
+          <!-- Start Targets -->
+          <div class="targets | p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Yearly Targets</h2>
+            <p class="mt-0 mb-20 c-nt-200 fs-15">Targets Of The Year</p>
+
+            <div class="targets-row bg-blue | mb-20 center-flex">
+              <div class="icon | center-flex">
+                <i class="fa-solid fa-code fa-lg c-ac-one"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-nt-200">Project</span
+                ><span class="d-block mb-10 mt-5 fw-bold">24</span>
+                <div class="progress | p-relative">
+                  <span class="bg-blue | bg-ac-one" style="width: 55%"
+                    ><span class="bg-ac-one">55%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="targets-row bg-red | mb-20 center-flex">
+              <div class="icon | center-flex">
+                <i class="fa-solid fa-dollar-sign fa-lg c-pr-600"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-nt-200">Money</span
+                ><span class="d-block mb-10 mt-5 fw-bold">$20.000</span>
+                <div class="progress p-relative">
+                  <span class="bg-pr-600 bg-red" style="width: 90%"
+                    ><span class="bg-pr-600">90%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="targets-row bg-orange | mb-20 center-flex">
+              <div class="icon | center-flex">
+                <i class="fa-solid fa-users fa-lg c-ac-tree"></i>
+              </div>
+              <div class="details">
+                <span class="fs-14 c-nt-200">Team</span
+                ><span class="d-block mb-10 mt-5 fw-bold">12</span>
+                <div class="progress p-relative">
+                  <span class="bg-orange | bg-ac-tree" style="width: 75%"
+                    ><span class="bg-ac-tree">75%</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Targets -->
+
+          <!-- Start Ticket -->
+          <div class="tickets p-20 bg-white rad-10">
+            <h2 class="mt-0 mt-10">Tickets Statistique</h2>
+            <p class="mt-0 mb-20 c-nt-200 fs-15">
+              Everything About Support Tickets
+            </p>
+            <div class="d-flex txt-c gap-20 f-wrap">
+              <div class="box p-20 rad-10 fs-13 c-nt-200">
+                <i
+                  class="fa-regular fa-rectangle-list fa-2x mb-10 c-ac-tree"
+                ></i>
+                <span class="d-block c-nt-900 fw-bold fs-25 mb-5">2500</span>
+                Total
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-nt-200">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-ac-two"></i>
+                <span class="d-block c-nt-900 fw-bold fs-25 mb-5">500</span>
+                Pending
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-nt-200">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-ac-one"></i>
+                <span class="d-block c-nt-900 fw-bold fs-25 mb-5">1900</span>
+                Closed
+              </div>
+              <div class="box p-20 rad-10 fs-13 c-nt-200">
+                <i
+                  class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-pr-600"
+                ></i>
+                <span class="d-block c-nt-900 fw-bold fs-25 mb-5">100</span>
+                Deleted
+              </div>
+            </div>
+          </div>
+          <!-- End Ticket -->
+
+          <!-- Start Last News  -->
+          <div class="latest-news p-20 bg-white rad-10 txt-c-mobile">
+            <h2 class="mt-0 mb-20">Latest News</h2>
+            <div class="news-row d-flex block-mobile align-center">
+              <img class="rad-6 mr-15 w-100" src="images/new-03.jpg" alt="" />
+              <div class="info f-grow1">
+                <h3 class="fs-16 mb-5 mt-0">Created SASS Section</h3>
+                <p class="m-0 fs-14 c-nt-200">New SASS Examples & Tutorials</p>
+              </div>
+              <div class="bg-eee fs-13 label bnt-lab">3 Days Ago</div>
+            </div>
+            <div class="news-row d-flex block-mobile align-center">
+              <img class="rad-6 mr-15 w-100" src="images/new-02.jpg" alt="" />
+              <div class="info f-grow1">
+                <h3 class="fs-16 mb-5 mt-0">Changed The Design</h3>
+                <p class="m-0 fs-14 c-nt-200">A brand New Website Design</p>
+              </div>
+              <div class="bg-eee fs-13 label bnt-lab">4 Days Ago</div>
+            </div>
+            <div class="news-row d-flex block-mobile align-center">
+              <img class="rad-6 mr-15 w-100" src="images/new-01.jpg" alt="" />
+              <div class="info f-grow1">
+                <h3 class="fs-16 mb-5 mt-0">Team increased</h3>
+                <p class="m-0 fs-14 c-nt-200">3 developers Joined The Team</p>
+              </div>
+              <div class="bg-eee fs-13 label bnt-lab">6 Days Ago</div>
+            </div>
+            <div class="news-row d-flex block-mobile align-center">
+              <img class="rad-6 mr-15 w-100" src="images/new-04.jpg" alt="" />
+              <div class="info f-grow1">
+                <h3 class="fs-16 mb-5 mt-0">Added Payment Gateway</h3>
+                <p class="m-0 fs-14 c-nt-200">Many New Payment Gateway Added</p>
+              </div>
+              <div class="bg-eee fs-13 label bnt-lab">7 Days Ago</div>
+            </div>
+          </div>
+
+          <!-- End Last News  -->
         </div>
       </div>
     </div>

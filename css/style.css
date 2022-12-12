@@ -189,7 +189,7 @@ ul {
     width: 40px;
     height: 40px;
     margin-left: 15px;
-    border: 2px solid var(--clr-accent--one);
+    border: 2px solid var(--clr-accent-one);
     border-radius: 50%;
 }
 
@@ -243,3 +243,176 @@ ul {
     }
 }
 /* End Content */
+
+/* Start Welcome Widget */
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro img {
+    width: 170px;
+    margin-bottom : -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border: 3px solid white;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 20px;
+    margin-top: -32px;
+}
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .body > div{
+    flex: 1;
+}
+
+.welcome .visit {
+   margin: 0 15px 15px auto;
+   transition: 0.3s; 
+}
+
+.welcome .visit:hover {
+    background-color: var(--clr-primary-900);
+}
+
+
+@media (max-width: 767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+    }
+    
+    .welcome .body > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+/* End Welcome Widget */
+
+/* Start Qiuck Draft Widget  */
+.quick-draft textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+    transition: 0.3s; 
+}
+
+ .quick-draft .save:hover {
+    background-color: var(--clr-primary-900);
+}
+/* End Qiuck Draft Widget  */
+
+/* Start Targets  */
+.targets .targets-row .icon {
+    width: 80px;  
+    height: 80px; 
+    margin-right: 15px; 
+}
+
+.targets .details {
+    flex: 1;
+}
+
+.targets .details .progress {
+    height: 4px;
+}
+
+.targets .details .progress > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;   
+}
+
+.targets .details .progress > span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.targets .details .progress > span span::after {
+    content: "";
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+.targets .details .progress > .bg-red span::after {
+    border-top-color: var(--clr-primary-600);
+}
+
+.targets .details .progress > .bg-blue span::after {
+    border-top-color: var(--clr-accent-one);
+}
+
+.targets .details .progress > .bg-orange span::after {
+    border-top-color: var(--clr-accent-tree);
+}
+
+.bg-red .icon,
+.bg-red .progress {
+    background-color: var(--clr-primary-200);
+}
+
+.bg-blue .icon,
+.bg-blue .progress {
+    background-color: var(--clr-accent-one-200);
+}
+
+.bg-orange .icon,
+.bg-orange .progress {
+    background-color: var(--clr-accent-tree-200);
+}
+
+/* End Targets  */
+
+/* Start Tickets  */
+.tickets .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+    .tickets .box {
+        width: 100%
+    }
+}
+/* End Tickets  */
+
+/* Start Letest News */
+.latest-news .news-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+    .latest-news .news-row .label {
+        margin: 10px auto;
+        width: fit-content
+    }
+}
+
+/* End Letest News */
