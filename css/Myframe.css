@@ -1,16 +1,61 @@
+:root {
+    --clr-primary-200: #fad2d2;
+    --clr-primary-400: #ec776f;
+    --clr-primary-600: #DA291C; /*blue*/
+    --clr-primary-900: #d1180b;
+
+    --clr-accent--one: #0f6fbd;
+    --clr-accent--two: #22c55e;
+    --clr-accent--tree: #f59e0b;
+
+    --clr-neutral--200: #888;
+    --clr-neutral--500: #2a2727;
+    --clr-neutral-900: #000000;
+}
+
 /* Start Box */
 .d-flex {
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+ }
+
 .align-center {
     align-items: center;
 }
 
-.w-full {
-    width: 100%
+.d-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.d-block{
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .block-mobile {
+        display: block;
+    }
 }
 /* End Box */
+
+/* Start width & height */
+.w-full {
+    width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+
+/* End width & height  */
 
 /* Start Padding & Margin */
 .p-10 {
@@ -27,8 +72,29 @@
     margin: 20px; 
 }
 
+.m-0 {
+    margin: 0px; 
+}
+
+
 .mt-0 {
     margin-top: 0;  
+}
+
+.mt-5 {
+    margin-top: 5px;  
+}
+
+.mt-10 {
+    margin-top: 10px;  
+}
+
+.mt-20 {
+    margin-top: 20px;  
+}
+
+.mb-20 {
+    margin-bottom: 20px;  
 }
 
 /* End Padding & Margin */
@@ -38,8 +104,24 @@
     background-color: white;
 }
 
-.c-black {
-    color: black;
+.bg-eee {
+    background-color: #eee;
+}
+
+.bg-pr-600 {
+    background-color: var(--clr-primary-600);
+}
+
+.c-white {
+    color: white;
+}
+
+.c-nt-900 {
+    color: var(--clr-neutral-900);
+}
+
+.c-nt-200{
+    color: var(--clr-neutral--200);
 }
 
 /* End color */
@@ -60,13 +142,38 @@
     font-size: 14px;
 }
 
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center
+    }
+}
+
 /* End Font */
 
 /* Start Border  */
 .rad-6 {
     border-radius: 6px;
 }
+.rad-10 {
+    border-radius: 10px;
+}
+
+.br-1p {
+    border: 1px solid #ccc;
+}
 /* End Border  */
+
+/* Start Direction  */
+.rt-Dir {
+    direction: rtl
+}
+
+.rt-float {
+    float: right; 
+}
+
+
+/* End Direction  */
 
 /* Start Components */
 .between-flex {

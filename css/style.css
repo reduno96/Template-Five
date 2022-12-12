@@ -1,11 +1,3 @@
-:root {
-    --clr-primary-200: #fad2d2;
-    --clr-primary-600: #DA291C;
-    --clr-primary-900: #d1180b;
-
-}
-
-
 * {
     box-sizing: border-box;
 }
@@ -21,6 +13,22 @@ body {
 
 a {
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-primary-400)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--clr-primary-600)
 }
 
 .page {
@@ -41,6 +49,11 @@ ul {
 
 .sidebar > h3 {
     margin-bottom: 50px;
+    transition:  .7s;
+}
+
+.sidebar > h3.h-small{
+    display: none;
 }
 
 .sidebar > h3::before,
@@ -49,15 +62,13 @@ ul {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-
 }
 
-.sidebar >h3::before {
-    background-color: #DA291C;
+.sidebar > h3::before {
+    background-color: var(--clr-primary-600);
     width: 100px;
     height: 3px;
     bottom: -18px;
-    
 }
 
 .sidebar > h3::after {
@@ -69,9 +80,14 @@ ul {
     border: 5px solid  white;
 }
 
+.sidebar ul li a {
+    transition: .5s;
+}
+
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
-    background-color: #fad2d2;
+    padding-left: 15px;
+    background-color: var(--clr-primary-200);
 }
 
 .sidebar ul li a span {
@@ -84,18 +100,27 @@ ul {
         width: 65px;
         padding: 10px; 
     }
-
-    .sidebar > h3 {
-        text-shadow: red 1px 0 10px;
-        font-size: 11px;
-        font-weight: bold;
-        margin-bottom: 15px;
+    .sidebar > h3.h-small{
+        display: block;
     }
 
-    .sidebar > h3::before,
+    .sidebar > h3.h-larg {
+        display: none;   
+    }
+
+    .sidebar > h3::before {
+        width: 40px;
+        height: 4px;
+        bottom: -15px;
+    } 
     .sidebar > h3::after {
-        display: none;
-    }        
+        width: 4px;
+        height: 4px;
+        border: 2px solid  white;
+        bottom: -17px;
+
+
+    }       
     .sidebar ul li a span {
         display: none;
     }
@@ -103,10 +128,6 @@ ul {
 /* End Sidebar */
 
 /* Start Content */
-.content {
-
-}
-
 .head .search::before { 
     font-family: var(--fa-style-family-classic);
     content: "\f002";
@@ -116,14 +137,109 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
+    color: var(--clr-neutral--200);
 }
 .head .search input {
+    margin-left: 5px;
+    padding-left: 30px;
+    width: 180px;
+    transition: width 0.3s;
 }
 
 .head .search input:focus {
-
+    width: 230px;
 }
-.head .search input:focus::placeholder {
 
+@media (max-width: 767px) {
+    .head .search input {
+       width: 140px;
+    }
+    
+    .head .search input:focus {
+        width: 160px;
+    } 
+}
+
+.head .search input:focus::placeholder {
+    opacity: 0;
+}
+
+.head .top-rt .n-profile {
+    margin-left: 20px;
+}
+
+.head .top-rt .ac-profile {
+    display: block;
+    text-align: center;
+}
+
+.head .top-rt .ac-profile {
+    font-size: 13px;
+    color: var(--clr-neutral--200)
+}
+
+@media (max-width: 767px) {
+    .head .top-rt .n-profile {
+        display: none;
+    }
+   
+}
+
+.head .top-rt img {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border: 2px solid var(--clr-accent--one);
+    border-radius: 50%;
+}
+
+.head .top-rt .notification::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr-primary-900);
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}
+
+.page h1 {
+    font-size: 1.5rem; 
+    margin: 20px 20px 40px;
+}
+
+.page h1::before,
+.page h1::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.page h1::before {
+    background-color: white;
+    width: 120px
+}
+
+.page h1::after {
+    background-color: var(--clr-primary-600);
+    width: 50px
+}
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;  
+        gap: 10px;
+    }
 }
 /* End Content */

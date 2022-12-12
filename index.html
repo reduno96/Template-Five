@@ -18,11 +18,13 @@
   <body>
     <div class="page | d-flex">
       <div class="sidebar | bg-white p-20 p-relative">
-        <h3 class="p-relative txt-c mt-0">MotivRed</h3>
+        <h3 class="h-larg p-relative txt-c mt-0">MotivRed</h3>
+        <h3 class="h-small p-relative txt-c mt-0">MR</h3>
+
         <ul>
           <li>
             <a
-              class="active | d-flex align-center fs-14 c-black rad-6 p-10"
+              class="active | d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="index.html"
             >
               <i class="fa-regular fa-chart-bar fa-fw"></i>
@@ -31,7 +33,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="settings.html"
             >
               <i class="fa-solid fa-gear fa-fw"></i>
@@ -40,7 +42,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="profile.html"
             >
               <i class="fa-regular fa-user fa-fw"></i>
@@ -49,7 +51,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="projects.html"
             >
               <i class="fa-solid fa-diagram-project fa-fw"></i>
@@ -58,7 +60,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="courses.html"
             >
               <i class="fa-solid fa-graduation-cap fa-fw"></i>
@@ -67,7 +69,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="friends.html"
             >
               <i class="fa-regular fa-circle-user fa-fw"></i>
@@ -76,7 +78,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="files.html"
             >
               <i class="fa-regular fa-file fa-fw"></i>
@@ -85,7 +87,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="plans.html"
             >
               <i class="fa-regular fa-credit-card fa-fw"></i>
@@ -97,19 +99,60 @@
 
       <div class="content | w-full">
         <!-- Start head -->
-        <div class="head bg-white p-15 between-flex">
+        <div class="head | bg-white p-15 between-flex">
           <div class="search p-relative">
-            <input class="p-10" type="search" placeholder="Type a Keyword" />
+            <input
+              class="p-10 br-1p rad-10"
+              type="search"
+              placeholder="Type a Keyword"
+            />
           </div>
-          <div class="icons d-flex align-center">
-            <span class="notification p-relative">
+
+          <div class="top-rt d-flex align-center">
+            <span class="rt-float notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
-            <img src="images/avatar-anisha.png" alt="" />
+            <span class="n-profile">
+              Redouane
+              <span class="ac-profile">(developer)</span>
+            </span>
+            <a href="profile.html">
+              <img src="images/avatar-anisha.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Dashboard</h1>
+        <div class="wrapper | d-grid gap-20">
+          <div class="welcome | bg-white rad-10 txt-c-mobile block-mobile">
+            <div class="intro | p-20 d-flex space-between bg-eee">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <p class="c-nt-200 mt-5">Redouane</p>
+              </div>
+              <img src="images/welcome.png" alt="" />
+            </div>
+            <div class="body | txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+              <div>
+                Redouane El Morabet<span class="d-block c-nt-200 fs-14 mt-10"
+                  >Developer</span
+                >
+              </div>
+              <div>
+                80<span class="d-block c-nt-200 fs-14 mt-10">Project</span>
+              </div>
+              <div>
+                $100000<span class="d-block c-nt-200 fs-14 mt-10">Earned</span>
+              </div>
+            </div>
+            <a
+              href="profile.html"
+              class="visit d-block fs-14 rad-6 c-white bg-pr-600 w-fit"
+              >Profile</a
+            >
           </div>
         </div>
       </div>
-      <!-- End Head -->
     </div>
     <script type="module" src="javascript/main.js"></script>
   </body>
