@@ -656,6 +656,121 @@ ul {
 
 /* End Project Table  */
 
+/* Start Settings */
+
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.settings-page .close-message {
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+}
+
+.settings-page .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+}
+
+.settings-page .sec-box {
+    padding-bottom: 15px
+}
+
+.settings-page .sec-box:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.settings-page .sec-box .button {
+    transition: .3s;
+}
+
+.settings-page .sec-box .button:hover {
+    background-color: var(--clr-primary-900)
+}
+
+.settings-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: .3s;
+}
+
+.settings-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+
+.settings-page .social-boxes>div:focus-within i {
+    color: var(--clr-primary-400);
+}
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: .3s;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background-color: var(--clr-primary-600);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--clr-primary-600);
+}
+
+.settings-page :disabled {
+    cursor: no-drop;
+    background-color: #F0F4F8;
+    color: #bbb;
+}
+
+/* End Settings */
 /* Start Animation */
 
 @keyframes chage-color {

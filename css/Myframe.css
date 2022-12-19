@@ -165,6 +165,10 @@
     margin-bottom: 10px;
 }
 
+.mb-15 {
+    margin-bottom: 15px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -288,6 +292,10 @@
 /* Start Border  */
 .b-none {
     border: none;
+}
+
+.border-ccc {
+    border: 1px solid #ccc;
 }
 
 .rad-6 {
