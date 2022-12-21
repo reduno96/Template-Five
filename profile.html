@@ -33,7 +33,7 @@
           </li>
           <li>
             <a
-              class="active | d-flex align-center fs-14 c-nt-900 rad-6 p-10"
+              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="settings.html"
             >
               <i class="fa-solid fa-gear fa-fw"></i>
@@ -42,7 +42,7 @@
           </li>
           <li>
             <a
-              class="d-flex align-center fs-14 c-nt-900 rad-6 p-10"
+              class="active | d-flex align-center fs-14 c-nt-900 rad-6 p-10"
               href="profile.html"
             >
               <i class="fa-regular fa-user fa-fw"></i>
@@ -122,228 +122,201 @@
           </div>
         </div>
         <!-- End Head -->
-        <h1 class="p-relative">Settings</h1>
-        <div class="settings-page m-20 d-grid gap-20">
-          <!-- Start Settings Box -->
-          <div class="p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Site Control</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">
-              Control The Website If There Is Maintenance
-            </p>
-            <div class="mb-15 between-flex">
-              <div>
-                <span>Website Control</span>
-                <p class="c-nt-200 mt-5 mb-0 fs-13">
-                  Open/Close Website And Type The Reason
-                </p>
+        <h1 class="p-relative">Profile</h1>
+        <div class="profile-page m-20">
+          <!-- Start Overview -->
+          <div class="overview bg-white rad-10 d-flex align-center">
+            <div class="avatar-box txt-c p-20">
+              <img
+                class="rad-half mb-10"
+                src="images/avatar-anisha.png"
+                alt=""
+              />
+              <h3 class="m-0">Redouane El Morabet</h3>
+              <p class="c-nt-200 mt-10">Level 20</p>
+              <div class="level rad-6 bg-eee p-relative">
+                <span style="width: 70%"></span>
               </div>
-              <div>
-                <label>
-                  <input class="toggle-checkbox" type="checkbox" checked />
-                  <div class="toggle-switch"></div>
-                </label>
+              <div class="rating mt-10 mb-10">
+                <i class="fa-solid fa-star c-ac-tree fs-13"></i>
+                <i class="fa-solid fa-star c-ac-tree fs-13"></i>
+                <i class="fa-solid fa-star c-ac-tree fs-13"></i>
+                <i class="fa-solid fa-star c-ac-tree fs-13"></i>
+                <i class="fa-solid fa-star c-ac-tree fs-13"></i>
               </div>
+              <p class="c-nt-200 m-0 fs-13">550 Rating</p>
             </div>
-            <textarea
-              class="close-message p-10 rad-6 d-block w-full"
-              placeholder="Close Message Content"
-            ></textarea>
-          </div>
-          <div class="p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">General Info</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">
-              General Information About Your Account
-            </p>
-            <div class="mb-15">
-              <label class="fs-14 c-nt-200 d-block mb-10" for="first"
-                >First Name</label
-              >
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                type="text"
-                id="first"
-                placeholder="First Name"
-              />
-            </div>
-            <div class="mb-15">
-              <label class="fs-14 c-nt-200 d-block mb-5" for="last"
-                >Last Name</label
-              >
-              <input
-                class="b-none border-ccc p-10 rad-6 d-block w-full"
-                id="last"
-                type="text"
-                placeholder="Last Name"
-              />
-            </div>
-            <div>
-              <label class="fs-14 c-nt-200 d-block mb-5" for="email"
-                >Email</label
-              >
-              <input
-                class="email b-none border-ccc p-10 rad-6 w-full mr-10"
-                id="email"
-                type="email"
-                value="o@nn.sa"
-                disabled
-              />
-              <a class="c-pr-600" href="#">Change</a>
-            </div>
-          </div>
-          <!-- End Settings Box -->
-
-          <!-- Start Settings Box -->
-          <div class="p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Security Info</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">
-              Security Information About Your Account
-            </p>
-            <div class="sec-box mb-15 between-flex">
-              <div>
-                <span>Password</span>
-                <p class="c-nt-200 mt-5 mb-0 fs-13">
-                  Last Change On 25/10/2021
-                </p>
+            <div class="info-box w-full">
+              <!-- Start Information Row -->
+              <div class="box p-20 d-flex align-center">
+                <h4 class="c-nt-200 fw-nr fs-15 m-0 w-full">
+                  General Information
+                </h4>
+                <div class="fs-14">
+                  <span class="c-nt-200">Full Name</span>
+                  <span>Redouane El Morabet</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Gender:</span>
+                  <span>Male</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Country:</span>
+                  <span>Morocco</span>
+                </div>
+                <div class="fs-14">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
               </div>
-              <a class="button bg-pr-600 c-white btn-lab" href="#">Change</a>
-            </div>
-            <div class="sec-box mb-15 between-flex">
-              <div>
-                <span>Two-Factor Authentication</span>
-                <p class="c-nt-200 mt-5 mb-0 fs-13">
-                  Enable/Disable The Feature
-                </p>
+              <!-- End Information Row -->
+              <!-- Start Information Row -->
+              <div class="box p-20 d-flex align-center">
+                <h4 class="c-nt-200 fw-nr w-full fs-15 m-0">
+                  Personal Information
+                </h4>
+                <div class="fs-14">
+                  <span class="c-nt-200">Email:</span>
+                  <span>o@nn.sa</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Phone:</span>
+                  <span>+2121234567890</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Date Of Birth:</span>
+                  <span>28/10/1996</span>
+                </div>
+                <div class="fs-14">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
               </div>
-              <label>
-                <input class="toggle-checkbox" type="checkbox" checked />
-                <div class="toggle-switch"></div>
-              </label>
-            </div>
-            <div class="sec-box between-flex">
-              <div>
-                <span>Devices</span>
-                <p class="c-nt-200 mt-5 mb-0 fs-13">
-                  Check The Login Devices List
-                </p>
+              <!-- End Information Row -->
+              <!-- Start Information Row -->
+              <div class="box p-20 d-flex align-center">
+                <h4 class="c-nt-200 fw-nr w-full fs-15 m-0">Job Information</h4>
+                <div class="fs-14">
+                  <span class="c-nt-200">Title:</span>
+                  <span>Full Stack Developer</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Programming Language:</span>
+                  <span>JAVA</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Years Of Experience:</span>
+                  <span>2+</span>
+                </div>
+                <div class="fs-14">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
               </div>
-              <a class="bg-eee c-nt-900 btn-lab" href="#">Devices</a>
-            </div>
-          </div>
-          <!-- End Settings Box -->
-
-          <!-- Start Settings Box -->
-          <div class="social-boxes p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Social Info</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">Social Media Information</p>
-            <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-twitter center-flex c-nt-200"></i>
-              <input
-                class="w-full"
-                type="text"
-                placeholder="Twitter Username"
-              />
-            </div>
-            <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-facebook-f center-flex c-nt-200"></i>
-              <input
-                class="w-full"
-                type="text"
-                placeholder="Facebook Username"
-              />
-            </div>
-            <div class="d-flex align-center mb-15">
-              <i class="fa-brands fa-linkedin center-flex c-nt-200"></i>
-              <input
-                class="w-full"
-                type="text"
-                placeholder="Linkedin Username"
-              />
-            </div>
-            <div class="d-flex align-center">
-              <i class="fa-brands fa-youtube center-flex c-nt-200"></i>
-              <input
-                class="w-full"
-                type="text"
-                placeholder="Youtube Username"
-              />
+              <!-- End Information Row -->
+              <!-- Start Information Row -->
+              <div class="box p-20 d-flex align-center">
+                <h4 class="c-nt-200 fw-nr w-full fs-15 m-0">
+                  Billing Information
+                </h4>
+                <div class="fs-14">
+                  <span class="c-nt-200">Payment Method:</span>
+                  <span>Paypal</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Email:</span>
+                  <span>email@website.com</span>
+                </div>
+                <div class="fs-14">
+                  <span class="c-nt-200">Subscription:</span>
+                  <span>Monthly</span>
+                </div>
+                <div class="fs-14">
+                  <label>
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- End Information Row -->
             </div>
           </div>
-          <!-- End Settings Box -->
-
-          <!-- Start Settings Box -->
-          <div class="widgets-control p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Widgets Control</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">Show/Hide Widgets</p>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="one" checked />
-              <label for="one">Quick Draft</label>
+          <!-- End Overview -->
+          <!-- Start Other Data  -->
+          <div class="other-data d-flex gap-20">
+            <div class="skills-card p-20 bg-white rad-10 mt-20">
+              <h2 class="mt-0 mb-10">My Skills</h2>
+              <p class="mt-0 mb-20 c-nt-200 fs-15">Complete Skills List</p>
+              <ul class="m-0 txt-c-mobile">
+                <li><span>HTML</span><span>Pugjs</span><span>HAML</span></li>
+                <li><span>CSS</span><span>SASS</span><span>Stylus</span></li>
+                <li><span>JavaScript</span><span>TypeScript</span></li>
+                <li><span>Vuejs</span><span>Reactjs</span></li>
+                <li><span>Jest</span><span>Jasmine</span></li>
+                <li><span>PHP</span><span>Laravel</span></li>
+                <li><span>Java</span><span>Spring</span></li>
+              </ul>
             </div>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="two" checked />
-              <label for="two">Yearly Targets</label>
-            </div>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="three" checked />
-              <label for="three">Tickets Statistics</label>
-            </div>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="four" checked />
-              <label for="four">Latest News</label>
-            </div>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="five" />
-              <label for="five">Latest Tasks</label>
-            </div>
-            <div class="control d-flex align-center mb-15">
-              <input type="checkbox" id="six" checked />
-              <label for="six">Top Search Items</label>
-            </div>
-          </div>
-          <!-- End Settings Box -->
-
-          <!-- Start Settings Box -->
-          <div class="backup-control p-20 bg-white rad-10">
-            <h2 class="mt-0 mb-10">Backup Manager</h2>
-            <p class="mt-0 mb-20 c-nt-200 fs-15">
-              Control Backup Time And Location
-            </p>
-            <div class="date d-flex align-center mb-15">
-              <input type="radio" name="time" id="daily" checked />
-              <label for="daily">Daily</label>
-            </div>
-            <div class="date d-flex align-center mb-15">
-              <input type="radio" name="time" id="weekly" />
-              <label for="weekly">Weekly</label>
-            </div>
-            <div class="date d-flex align-center mb-15">
-              <input type="radio" name="time" id="monthly" />
-              <label for="monthly">Monthly</label>
-            </div>
-            <div class="servers d-flex align-center txt-c">
-              <input type="radio" name="servers" id="server-one" />
-              <div class="server mb-15 rad-10 w-full">
-                <label class="d-block m-15" for="server-one">
-                  <i class="fa-solid fa-server d-block mb-10"></i>
-                  Megaman
-                </label>
+            <div class="activities p-20 bg-white rad-10 mt-20">
+              <h2 class="mt-0 mb-10">Latest Activities</h2>
+              <p class="mt-0 mb-20 c-nt-200 fs-15">
+                Latest Activities Done By The User
+              </p>
+              <div class="activity d-flex align-center txt-c-mobile">
+                <img src="images/activity-01.png" alt="" />
+                <div class="info">
+                  <span class="d-block mb-10">Store</span>
+                  <span class="c-nt-200"
+                    >Bought The Mastering Python Course</span
+                  >
+                </div>
+                <div class="date">
+                  <span class="d-block mb-10">18:10</span>
+                  <span class="c-nt-200">Yesterday</span>
+                </div>
               </div>
-              <input type="radio" name="servers" id="server-two" checked />
-              <div class="server mb-15 rad-10 w-full">
-                <label class="d-block m-15" for="server-two">
-                  <i class="fa-solid fa-server d-block mb-10"></i>
-                  Zero
-                </label>
+              <div class="activity d-flex align-center txt-c-mobile">
+                <img src="images/activity-02.png" alt="" />
+                <div class="info">
+                  <span class="d-block mb-10">Academy</span>
+                  <span class="c-nt-200">Got The PHP Certificate</span>
+                </div>
+                <div class="date">
+                  <span class="d-block mb-10">16:05</span>
+                  <span class="c-nt-200">Yesterday</span>
+                </div>
               </div>
-              <input type="radio" name="servers" id="server-three" />
-              <div class="server mb-15 rad-10 w-full">
-                <label class="d-block m-15" for="server-three">
-                  <i class="fa-solid fa-server d-block mb-10"></i>
-                  Sigma
-                </label>
+              <div class="activity d-flex align-center txt-c-mobile">
+                <img src="images/activity-03.png" alt="" />
+                <div class="info">
+                  <span class="d-block mb-10">Badges</span>
+                  <span class="c-nt-200">Unlocked The 10 Skills Badge</span>
+                </div>
+                <div class="date">
+                  <span class="d-block mb-10">18:05</span>
+                  <span class="c-nt-200">Yesterday</span>
+                </div>
+              </div>
+              <div class="activity d-flex align-center txt-c-mobile">
+                <img src="images/activity-01.png" alt="" />
+                <div class="info">
+                  <span class="d-block mb-10">Store</span>
+                  <span class="c-nt-200">Bought The Typescript Course</span>
+                </div>
+                <div class="date">
+                  <span class="d-block mb-10">12:05</span>
+                  <span class="c-nt-200">Yesterday</span>
+                </div>
               </div>
             </div>
           </div>
-          <!-- End Settings Box -->
+          <!-- End Other Data -->
         </div>
       </div>
     </div>

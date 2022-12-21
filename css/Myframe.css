@@ -2,7 +2,6 @@
     --clr-primary-200: hsl(0, 80%, 90%);
     --clr-primary-400: #ec776f;
     --clr-primary-600: #DA291C;
-    /*blue*/
     --clr-primary-900: #d1180b;
 
     --clr-accent-one-200: hsl(206, 85%, 87%);
@@ -283,6 +282,10 @@
 
 .fw-bold {
     font-weight: bold;
+}
+
+.fw-nr {
+    font-weight: normal;
 }
 
 @media (max-width: 767px) {
