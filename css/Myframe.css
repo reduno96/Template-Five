@@ -120,12 +120,16 @@
     padding-left: 15px;
 }
 
+.m-0 {
+    margin: 0px;
+}
+
 .m-20 {
     margin: 20px;
 }
 
-.m-0 {
-    margin: 0px;
+.m-15 {
+    margin: 15px;
 }
 
 

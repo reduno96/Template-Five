@@ -720,6 +720,134 @@ ul {
     color: var(--clr-primary-400);
 }
 
+.widgets-control .control input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.widgets-control .control label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.widgets-control .control label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--clr-neutral--200);
+}
+
+.widgets-control .control label:hover::before {
+    border-color: var(--clr-primary-400)
+}
+
+.widgets-control .control label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--clr-primary-600);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: .3s;
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.widgets-control .control input[type="checkbox"]:checked+label::after {
+    transform: scale(1);
+}
+
+.backup-control input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.backup-control .date label::before {
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--clr-neutral--200);
+}
+
+.backup-control .date label::after {
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--clr-primary-600);
+    transition: .3s;
+    transform: scale(0);
+}
+
+.backup-control .date label::before,
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+    border-color: var(--clr-primary-600)
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+    transform: scale(1);
+}
+
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+
+    .backup-control .servers {
+        flex-wrap: wrap;
+    }
+}
+
+
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+
+.backup-control .servers label {
+    cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+    border-color: var(--clr-primary-600);
+    color: var(--clr-primary-600);
+}
+
+
+.backup-control .servers {}
+
 .toggle-checkbox {
     -webkit-appearance: none;
     appearance: none;
