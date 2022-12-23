@@ -1276,17 +1276,76 @@ ul {
     }
 }
 
+.files-page .files-stats {
+    min-width: 260px;
+}
+
+.files-page .files-stats .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.files-page .files-stats .size {
+    margin-left: auto;
+}
+
+.files-page .files-stats .bg-red {
+    background-color: var(--clr-primary-200);
+}
+
+
+.files-page .files-stats .bg-blue {
+    background-color: var(--clr-accent-one-200);
+}
+
+.files-page .files-stats .bg-orange {
+    background-color: var(--clr-accent-tree-200);
+}
+
+.files-page .files-stats .bg-green {
+    background-color: var(--clr-accent-two-200);
+
+}
+
+.files-page .files-stats .upload {
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    transition: .3s;
+}
+
+.files-page .files-stats .upload:hover {
+    background-color: var(--clr-primary-900)
+}
+
+.files-page .files-stats .upload:hover i {
+    animation: go-up .6s infinite;
+}
+
+
 .files-page .files-content {
     flex: 1;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    cursor: pointer;
+}
+
+.files-page .files-content svg {
+    width: 64px;
+    height: 64px;
+    transition: .5s
+}
+
+.files-page .files-content .file:hover svg {
+    transform: rotate(15deg);
+}
+
+.files-page .files-content .info {
+    border-top: 1px solid #eee;
 }
 
 /* End Files Page  */
 
-
-
 /* Start Animation */
-
 @keyframes chage-color {
     from {
         background-color: var(--clr-primary-600);
@@ -1294,6 +1353,19 @@ ul {
 
     to {
         background-color: white;
+    }
+}
+
+@keyframes go-up {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+
     }
 }
 
