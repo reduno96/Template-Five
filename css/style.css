@@ -1204,6 +1204,65 @@ ul {
 
 /* End Courses Page  */
 
+/* Start Friend Page  */
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .friends-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.friends-page .contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.friends-page .contact i {
+    background-color: #EEE;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.friends-page .contact i:hover {
+    background-color: var(--clr-primary-600);
+    color: white;
+}
+
+.friends-page .friend .icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.friends-page .friend .icons i {
+    margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 35px;
+    opacity: .4;
+}
+
+/* End Courses Page  */
+
 
 
 /* Start Animation */
