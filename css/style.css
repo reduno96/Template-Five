@@ -1261,7 +1261,27 @@ ul {
     opacity: .4;
 }
 
-/* End Courses Page  */
+/* End Friend Page  */
+
+/* Start Files Page  */
+.files-page {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .files-page {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+.files-page .files-content {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* End Files Page  */
 
 
 

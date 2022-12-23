@@ -98,6 +98,10 @@
     padding: 15px;
 }
 
+.pt-10 {
+    padding-top: 10px;
+}
+
 .pt-15 {
     padding-top: 15px;
 }
@@ -254,6 +258,10 @@
     position: relative;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
 /* End Position */
 
 /* Start Font */
@@ -306,6 +314,10 @@
 
 .border-ccc {
     border: 1px solid #ccc;
+}
+
+.border-eee {
+    border: 1px solid #eee;
 }
 
 .rad-6 {
@@ -379,6 +391,7 @@
     padding: 4px 10px;
     border-radius: 6px;
 }
+
 
 
 /* End Components */
