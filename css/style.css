@@ -1329,6 +1329,15 @@ ul {
     cursor: pointer;
 }
 
+@media (max-width: 767px) {
+    .files-page .files-content {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
 .files-page .files-content svg {
     width: 64px;
     height: 64px;
@@ -1344,6 +1353,93 @@ ul {
 }
 
 /* End Files Page  */
+
+/* Start  Plans Page  */
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+@media (max-width: 767px) {
+    .plans-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+.plans-page .plan {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.plans-page .plan .top {
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+
+.plans-page .plan.bg-blue .top {
+    outline-color: var(--clr-accent-one)
+}
+
+.plans-page .plan.bg-green .top {
+    outline-color: var(--clr-accent-two)
+}
+
+.plans-page .plan.bg-orange .top {
+    outline-color: var(--clr-accent-tree)
+}
+
+.plans-page .plan .price {
+    position: relative;
+    font-size: 30px;
+    width: fit-content;
+    margin: auto;
+}
+
+.plans-page .plan .price span {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 20px;
+}
+
+.plans-page .plan .btn-shape {
+    font-size: 16px;
+    margin-left: auto;
+    margin-top: 33px;
+}
+
+.plans-page .plan ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    ;
+}
+
+.plans-page .plan ul li .yes {
+    color: var(--clr-accent-two);
+}
+
+.plans-page .plan ul li i:not(.yes, .help) {
+    color: var(--clr-primary-600);
+}
+
+.plans-page .plan ul li i:first-child {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.plans-page .plan ul li .help {
+    color: var(--clr-neutral--200);
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* End Plans Page  */
 
 /* Start Animation */
 @keyframes chage-color {
