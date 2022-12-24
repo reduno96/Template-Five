@@ -1374,6 +1374,12 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+@media (min-width: 1389px) {
+    .plans-page .plan {
+        gap: 50px;
+    }
+}
+
 .plans-page .plan .top {
     border: 3px solid white;
     outline: 3px solid transparent;
